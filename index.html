@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Site dédié à la musique électronique">
+    <meta name="author" content="Arnaud Bonnafoux">
+    <meta name="robots" content="index, follow">
+
+    <title>Arnaud Bonnafoux</title>
+    <link rel="shortcut icon" href="Images/arnaud_2.jpg" type="image/x-icon" />
+
+    <style>
+        p {
+            font-family: 'Helvetica', sans-serif; /* Choisissez une police qui convient à votre style */
+            font-size: 16px; /* Ajustez la taille de la police selon vos préférences */
+            line-height: 1.6; /* Ajustez l'espacement entre les lignes du texte */
+            color: #333; /* Choisissez une couleur de texte qui s'harmonise avec votre palette de couleurs */
+            margin-bottom: 15px; /* Ajoute de l'espace en bas de chaque paragraphe */
+            text-align: justify; /* Alignement justifié du texte */
+        }
+        footer {
+            background-color:#b39ddb;
+            color:rgb(255, 255, 255);
+            padding: 10px;
+      
+        }
+        header {
+            display: flex;
+            background-color:#b39ddb;
+            color:rgb(255, 255, 255)      
+        }
+        body {
+            font-family: 'Helvetica', sans-serif; 
+            margin-top: 2%;
+            margin-left: 2%;
+            margin-right: 2%;
+        }    
+        section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }  
+        article {
+            background-color: #f0e6f4;
+            color: #000000;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .image_1 {
+            max-width: 100%;
+            height: auto;
+            display: block; /* Pour résoudre le problème de la marge inférieure dans certains cas */
+            margin:auto;
+        }
+        .image_2 {
+            max-width: 8%;
+            height: auto;
+            display: block; /* Pour résoudre le problème de la marge inférieure dans certains cas */
+            margin:auto;
+        }
+        .image_3 {
+            width: auto;
+            height: 50px;
+            padding: 15px;
+        }
+        audio {
+            max-width: 100%;
+            background-color: #b39ddb;
+            padding: 3%;
+            border-radius: 20px;
+        }       
+        div {
+            display: flex;
+        }
+        div.streaming{ 
+            justify-content:center;
+        }
+        @media screen and (max-width: 600px) {
+            body {
+                font-size: small;
+            }
+            .image_3 {
+                width: auto;
+                height: 15px;
+        }
+        }
+        @media screen and (min-width: 1200px) {
+            section {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            }
+        }
+        @media screen and (max-width: 768px) {
+            p {
+                font-size: smaller;
+            }
+        }
+        @keyframes rotation {
+            from {
+            transform: rotate(0deg);
+            }
+            to {
+            transform: rotate(360deg);
+            }
+        }
+    /* Utilisation de la keyframe sur une image avec la classe "rotation-image" */
+        .rotation-image {
+            animation: rotation 10s linear infinite; /* Rotation pendant 5 secondes en boucle */  
+        }
+    </style>
+</head>
+<body>
+
+<header>  
+        <img src="Images/arnaud_2.jpg" alt="Portrait stylisé d'Arnaud Bonnafoux">
+        <h1 style="margin-left: 2%;">Arnaud Bonnafoux</h1>
+</header>
+
+<!--Textes-->
+<section>
+<article>
+    <h2>Le projet</h2>
+    <p>Le projet naît en pleine pandémie...<br>
+    Face à la frustration engendrée par les confinements, je décide à l'époque d'auto-produire mon 1<sup>er</sup>album, 
+    <em>After the Future</em> qui inaugurera mon activité de compositeur.<br>
+    En développant mes connaissances dans le domaine de la M.A.O., 
+    je crée pour l'occasion, un home studio modeste qui me permettra par la suite d'auto-produire trois EPs, publiés sur le site Bandcamp.<br>
+    Pendant les phases de création, quelques mélodies furent écrites. La forme musicale se veut simple et la durée des pièces, courte, à l'image d'une chanson. <br>
+    Le style quant à lui, est très changeant, pluriel et pour certaines pièces volontairement décalé. Il est le fruit de mon parcours de musicien 
+    et de mon imaginaire bercé, depuis longtemps, par des thèmes qui me sont chers comme la transcendance, l'introspection, la quête amoureuse et la science fiction.<br>
+    Pour conclure, j'espère que ma musique saura susciter en vous un réel intérêt et vous accompagner dans un univers original et singulier.</p>
+</article>
+<article>
+    <h2>Bio</h2>
+
+    <p>Mon activité de compositeur est tout d'abord le fruit de mon parcours d'étudiant. <br>
+    En 2000, j'obtiens mon D.E.A. de musicologie. Mon travail de recherche est alors consacré à l'improvisation musicale comme pratique et comme genre. <br>
+    C'est ensuite comme musicien et enseignant que je poursuis mon activité dans la musique et pendant cette période de ma vie, 
+    j'ai la chance de participer à plusieurs projets de création : <br>
+    Ogniqualvolta (free-jazz), UM (électro-rock), Dr Drone (électro-rock), Matthieu Davette Unit (Slam-rock), Juliette Armanet (Chanson), 
+    La Cie Desidelà (danse contemporaine), la Cie Tempo Cantabile (danse contemporaine) et Space raccoon (jazz actuel).<br> 
+    Toute cette expérience scénique passée, se retrouve donc comme "ADN" de mon travail actuel. <br>
+    En juin 2021, je publie mon 1<sup>er</sup>album, <em>After the Future</em> et puis suivront quatre Eps : 
+    <em>The light of inside, Stange mind, Blue explosion et Nostalgie Fantôme.</em></p>
+</article>
+</section>
+
+<!--Lecteur audio_1-->
+<h2>Nostalgie Fantôme</h2>
+<p>Dernier EP publié le 22 décembre 2023</p>
+<section>
+<article>
+    <img src="Images/nostalgie_fantasme_visuel_v2.jpg" alt="visuel de l'album" class="image_1">
+</article>
+<article>
+    <h3>Seule sur un tourniquet</h3>
+    <audio controls>
+        <source src="Nostalgie_fantôme/1_seule_sur_un_tourniquet.mp3" type="audio/mp3">
+    </audio>    
+    
+    <h3>Extase Renaissance</h3>
+
+    <audio controls>
+        <source src="Nostalgie_fantôme/2_extase_renaissance.mp3" type="audio/mp3">
+    </audio>
+
+    <h3>Fantasme faune</h3>
+    <audio controls>
+        <source src="Nostalgie_fantôme/3_fantasme_faune.mp3" type="audio/mp3">
+    </audio>
+
+    <h3>Transfert seum</h3>
+    <audio controls>
+        <source src="Nostalgie_fantôme/5_transfert_suem.mp3" type="audio/mp3">
+    </audio>
+
+    <h3>Mixtion Dystopique</h3>
+    <audio controls>
+        <source src="Nostalgie_fantôme/4_mixtion dystopique.mp3" type="audio/mp3">
+    </audio>
+
+    <h3>Nostalgie fantôme</h3>
+    <audio controls>
+        <source src="Nostalgie_fantôme/6_nostalgie_fantôme.mp3" type="audio/mp3">
+    </audio>
+</article>
+</section>
+
+<!--Lecteur audio_2-->
+<h2>Blue explosion</h2>
+<p>EP publié le 2 avril 2023</p>
+<section>
+<article>
+    <figure>
+    <img src="Images/explosion_ bleue.jpg" alt="visuel de l'album" class="image_1">
+    <figcaption>Artwork : &COPY; bibadaboo</figcaption>
+    </figure>
+</article>
+<article>
+    <h3>Bleu explosion</h3>
+    <audio controls>
+        <source src="Blue_explosion/1_blue_ explosion.mp3" type="audio/mp3">
+    </audio>    
+    
+    <h3>Before the party</h3>
+
+    <audio controls>
+        <source src="Blue_explosion/2_before_the_ party.mp3" type="audio/mp3">
+    </audio>
+
+    <h3>Cosmic duende</h3>
+    <audio controls>
+        <source src="Blue_explosion/3_cosmic_ duende.mp3" type="audio/mp3">
+    </audio>
+
+    <h3>Cosmic glossolalie</h3>
+    <audio controls>
+        <source src="Blue_explosion/4_cosmic_ glossolalie.mp3" type="audio/mp3">
+    </audio>
+
+    <h3>Unknown dimension</h3>
+    <audio controls>
+        <source src="Blue_explosion/5_unknown_ dimension.mp3" type="audio/mp3">
+    </audio>
+
+    <h3>Bats attack</h3>
+    <audio controls>
+        <source src="Blue_explosion/6_bats_ attack.mp3" type="audio/mp3">
+    </audio>
+</article>
+</section>
+
+<!--Streaming-->
+<div class="streaming">
+    <a href="https://bfxmusic.bandcamp.com/album/nostalgie-fant-me" target="_blank">
+        <img class="image_3 rotation-image" src="Images/BandCamp-Emblem.png" alt=""></a>
+    <a href="https://www.deezer.com/fr/artist/212150757" target="_blank">
+        <img class="image_3 rotation-image" src="Images/Deezer-logo-750x529.jpg" alt=""></a>
+    <a href="https://open.spotify.com/intl-fr/artist/2yuWXjPpw072E1CIxgDkf7" target="_blank">
+        <img class="image_3 rotation-image" src="Images/Spotify-Emblem.png" alt=""></a>
+    <a href="https://music.apple.com/us/artist/arnaud-bonnafoux/1685868826" target="_blank">
+        <img class="image_3 rotation-image" src="Images/apple-music-logo-clipart-transparent-9.png" alt=""></a>
+    <a href="https://music.youtube.com/channel/UCnl0tnLz4M9_VzUUIfBWQvA" target="_blank">
+        <img class="image_3 rotation-image" src="Images/445-4456208_youtube-music-logo-png-transparent-png.png" alt=""></a>
+    <a href="https://www.qobuz.com/fr-fr/interpreter/arnaud-bonnafoux/18303485" target="_blank">
+        <img class="image_3 rotation-image" src="Images/Qobuz_Logo.jpg" alt=""></a>
+</div>
+
+<!--Contact et copyright-->
+<footer>
+    <p style="text-align: center;">Contact : bonnafouxarnaud@gmail.com</p>
+    <p style="text-align: center;">&COPY; 2024 Arnaud Bonnafoux</p>
+    <div>
+        <a href="https://www.facebook.com/bfx.at" target="_blank">
+            <img class="rotation-image image_2" src="Images/facebook-logo-png-4.png" alt=""></a>
+        <a href="https://www.instagram.com/bfx_at/" target="_blank">
+            <img class="rotation-image image_2"src="Images/instagram_PNG10.png" alt=""></a>
+    </div>
+</footer>     
