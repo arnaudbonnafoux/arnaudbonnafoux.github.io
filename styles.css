@@ -1,0 +1,121 @@
+p {
+    font-family: 'Roboto', sans-serif; /* Choisissez une police qui convient à votre style */
+    font-size: 16px; /* Ajustez la taille de la police selon vos préférences */
+    line-height: 1.6; /* Ajustez l'espacement entre les lignes du texte */
+    color: #333; /* Choisissez une couleur de texte qui s'harmonise avec votre palette de couleurs */
+    margin-bottom: 15px; /* Ajoute de l'espace en bas de chaque paragraphe */
+    text-align: justify; /* Alignement justifié du texte */
+}
+footer {
+    background-color:#b39ddb;
+    color:rgb(255, 255, 255);
+    padding: 10px;
+    margin-top: 5%;   
+}
+header {
+    display: flex;
+    background-color:#b39ddb;
+    color:rgb(255, 255, 255)      
+}
+body {
+    font-family: 'Roboto', sans-serif; 
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+}    
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}  
+article {
+    background-color: #f0e6f4;
+    color: #000000;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;    
+}
+input[type="email"] {
+width: 50%; /* Largeur désirée */
+height: 5%; /* Hauteur désirée */
+}
+.image_1 {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Pour résoudre le problème de la marge inférieure dans certains cas */
+    margin:auto;
+}
+.image_2 {
+    max-width: 8%;
+    height: auto;
+    display: block; /* Pour résoudre le problème de la marge inférieure dans certains cas */
+    margin:auto;
+}
+.image_3 {
+    width: auto;
+    height: 50px;
+    padding: 15px;
+}
+audio {
+    max-width: 100%;
+    background-color: #b39ddb;
+    padding: 1%;
+    border-radius: 5px;
+}       
+div {
+    display: flex;
+}
+div.streaming{ 
+    justify-content:center;
+}  
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (max-width: 600px) {
+    body {
+        font-size: small;
+    }
+    .image_3 {
+        width: auto;
+        height: 20px;
+}
+}
+@media screen and (min-width: 1200px) {
+    section {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+@media screen and (max-width: 768px) {
+    p {
+        font-size: smaller;
+    }
+}
+@keyframes rotation {
+    from {
+    transform: rotate(0deg);
+    }
+    to {
+    transform: rotate(360deg);
+    }
+}
+/* Utilisation de la keyframe sur une image avec la classe "rotation-image" */
+.rotation-image {
+    animation: rotation 10s linear infinite; /* Rotation pendant 5 secondes en boucle */  
+}
+.image_4{
+    width: 40%;
+    display: block; /* Pour s'assurer que la marge automatique fonctionne */
+    margin: 0 auto; /* Margin automatique sur les côtés gauche et droit */
+}
+h2{
+    text-align: center;
+}
+.sous-titre{
+    text-align: center;
+}
+.h3.footer{
+    color: aquamarine;
+}
