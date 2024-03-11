@@ -28,14 +28,14 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
-    padding: 20px;
+    padding: 10px;
 }  
 article {
     background-color: #f0e6f4;
     color: #000000;
-    padding: 15px;
+    padding: 10px;
     text-align: center;
-    font-size: 14px;    
+    font-size: 12px;    
 }
 input[type="email"] {
 width: 50%; /* Largeur désirée */
