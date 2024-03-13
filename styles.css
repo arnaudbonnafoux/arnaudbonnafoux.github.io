@@ -77,7 +77,7 @@ form {
 }
 @media screen and (max-width: 600px) {
     body {
-        font-size: small;
+        font-size: medium;
     }
     .image_3 {
         width: auto;
