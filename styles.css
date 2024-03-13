@@ -38,7 +38,7 @@ article {
     font-size: 12px;    
 }
 input[type="email"] {
-width: 50%; /* Largeur désirée */
+width: 205px; /* Largeur désirée */
 height: 5%; /* Hauteur désirée */
 }
 .image_1 {
