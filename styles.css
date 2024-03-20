@@ -1,6 +1,6 @@
 p {
     font-family: 'Roboto', sans-serif; /* Choisissez une police qui convient à votre style */
-    font-size: 16px; /* Ajustez la taille de la police selon vos préférences */
+    font-size: 14px; /* Ajustez la taille de la police selon vos préférences */
     line-height: 1.6; /* Ajustez l'espacement entre les lignes du texte */
     color: #333; /* Choisissez une couleur de texte qui s'harmonise avec votre palette de couleurs */
     margin-bottom: 15px; /* Ajoute de l'espace en bas de chaque paragraphe */
@@ -13,8 +13,9 @@ footer {
     margin-top: 5%;   
 }
 header {
+    height: 200px;
     display: flex;
-    background-color:#b39ddb;
+    background-color:#000000;
     color:rgb(255, 255, 255)      
 }
 body {
@@ -28,14 +29,14 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
-    padding: 10px;
+    padding: 20px;
 }  
 article {
     background-color: #f0e6f4;
     color: #000000;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
-    font-size: 12px;    
+    font-size: 14px;    
 }
 input[type="email"] {
 width: 205px; /* Largeur désirée */
@@ -58,6 +59,13 @@ height: 5%; /* Hauteur désirée */
     height: 50px;
     padding: 15px;
 }
+.image_5 {
+    max-width: 50%; /* Pour que l'image reste dans les limites de son conteneur */
+    height: auto; /* Pour conserver les proportions de l'image */
+    display: block; /* Pour que l'image se comporte comme un bloc */
+    float: left; /* Pour aligner l'image sur le côté gauche */
+    }
+    
 audio {
     max-width: 100%;
     background-color: #b39ddb;
@@ -91,7 +99,7 @@ form {
 }
 @media screen and (max-width: 768px) {
     p {
-        font-size: smaller;
+        font-size: small;
     }
 }
 @keyframes rotation {
