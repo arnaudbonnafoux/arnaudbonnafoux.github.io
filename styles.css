@@ -43,10 +43,12 @@ width: 205px; /* Largeur désirée */
 height: 5%; /* Hauteur désirée */
 }
 .image_1 {
-    max-width: 100%;
+    max-width: 75%;
     height: auto;
-    display: block; /* Pour résoudre le problème de la marge inférieure dans certains cas */
-    margin:auto;
+    display: flex; /* Utilisation de Flexbox */
+    align-items: center; /* Pour centrer verticalement */
+    justify-content: center; /* Pour centrer horizontalement */
+    margin: auto; /* Pour centrer l'image horizontalement */
 }
 .image_2 {
     max-width: 8%;
@@ -56,7 +58,7 @@ height: 5%; /* Hauteur désirée */
 }
 .image_3 {
     width: auto;
-    height: 50px;
+    height: 35px;
     padding: 15px;
 }
 .image_5 {
@@ -67,7 +69,8 @@ height: 5%; /* Hauteur désirée */
     }
     
 audio {
-    max-width: 100%;
+    height: 20px;
+    max-width: 75%;
     background-color: #b39ddb;
     padding: 1%;
     border-radius: 5px;
@@ -115,7 +118,7 @@ form {
     animation: rotation 10s linear infinite; /* Rotation pendant 5 secondes en boucle */  
 }
 .image_4{
-    width: 40%;
+    width: 30%;
     display: block; /* Pour s'assurer que la marge automatique fonctionne */
     margin: 0 auto; /* Margin automatique sur les côtés gauche et droit */
 }
