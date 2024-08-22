@@ -33,7 +33,7 @@ section {
 }  
 article {
     /*background-color: #f0e6f4;*/
-    color: #000000;
+    color: #333;
     padding: 15px;
     text-align: center;
     font-size: 14px;    
@@ -128,6 +128,4 @@ h2{
 .sous-titre{
     text-align: center;
 }
-.h3.footer{
-    color: aquamarine;
-}
+
