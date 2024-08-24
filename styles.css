@@ -8,10 +8,13 @@ p {
 }
 footer {
     background-color:#b39ddb;
-    color:rgb(255, 255, 255);
+    color:#f5f5f5;
     padding: 10px;
     margin-top: 5%;   
 }
+footer a {
+    color: #fafafa; /* Lien en blanc cassé légèrement différent */
+    text-decoration: none;
 header {
     height: 200px;
     display: flex;
