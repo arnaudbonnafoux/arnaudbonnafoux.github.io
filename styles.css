@@ -6,6 +6,10 @@ p {
     margin-bottom: 15px; /* Ajoute de l'espace en bas de chaque paragraphe */
     text-align: justify; /* Alignement justifié du texte */
 }
+a {
+    color: #f5f5f5; 
+    text-decoration: none;
+}
 footer {
     background-color:#b39ddb;
     color:#f5f5f5;
