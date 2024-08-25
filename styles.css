@@ -37,7 +37,7 @@ section {
     padding: 20px;
 }  
 article {
-    /*background-color: #f0e6f4;*/
+    background: linear-gradient(to left, #b39ddb, #ffd1dc); /* Dégradé de droite à gauche */
     color: #333;
     padding: 15px;
     text-align: center;
