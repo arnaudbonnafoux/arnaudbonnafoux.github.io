@@ -22,7 +22,6 @@ header {
     display: flex;
     background-color:#b39ddb;
     color:rgb(255, 255, 255)
-    border-radius: 25px;
 }
 body {
     background-color: #FFD1DC;
