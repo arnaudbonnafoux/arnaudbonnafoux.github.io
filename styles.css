@@ -133,7 +133,7 @@ h2{
     text-align: center;
 }
 .album-announcement {
-    background: linear-gradient(to left, #b39ddb, #d1c4e9); /* Dégradé de droite à gauche */
+    background: linear-gradient(to left, #b39ddb, #ffd1dc); /* Dégradé de droite à gauche */
     color: #333; /* Texte sombre pour un bon contraste */
     text-align: center;
     padding: 20px;
