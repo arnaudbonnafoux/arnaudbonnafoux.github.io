@@ -6,10 +6,6 @@ p {
     margin-bottom: 15px; /* Ajoute de l'espace en bas de chaque paragraphe */
     text-align: justify; /* Alignement justifié du texte */
 }
-a {
-    color: #f5f5f5; 
-    text-decoration: none;
-}
 footer {
     background-color:#b39ddb;
     color:#f5f5f5;
@@ -17,14 +13,19 @@ footer {
     margin-top: 5%;
     border-radius: 25px;
 }
+a {
+    color: #fafafa; 
+    text-decoration: none;
+}
 header {
+    background-color:#b39ddb;
     height: 200px;
     display: flex;
-    background-color:#b39ddb;
-    color:#f5f5f5;
+    color: #f5f5f5;
+    border-radius: 25px;
 }
 body {
-    background-color: #FFD1DC;
+    background-color: #ffd1dc;
     font-family: 'Roboto', sans-serif; 
     margin-top: 2%;
     margin-left: 2%;
@@ -34,22 +35,22 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
-    padding: 20px;
+    padding: 10px;
 }  
 article {
-    background: linear-gradient(to left, #b39ddb, #ffd1dc); /* Dégradé de droite à gauche */
     color: #333;
     padding: 15px;
     text-align: center;
-    font-size: 14px; 
+    font-size: 14px;  
+    background: linear-gradient(to left, #b39ddb, #ffd1dc); /* Dégradé de droite à gauche */
     border-radius: 25px;
 }
 input[type="email"] {
-width: 205px; /* Largeur désirée */
+width: 225px; /* Largeur désirée */
 height: 5%; /* Hauteur désirée */
 }
 .image_1 {
-    max-width: 75%;
+    max-width: auto;
     height: auto;
     display: flex; /* Utilisation de Flexbox */
     align-items: center; /* Pour centrer verticalement */
@@ -64,7 +65,7 @@ height: 5%; /* Hauteur désirée */
 }
 .image_3 {
     width: auto;
-    height: 35px;
+    height: 50px;
     padding: 15px;
 }
 .image_5 {
@@ -72,10 +73,9 @@ height: 5%; /* Hauteur désirée */
     height: auto; /* Pour conserver les proportions de l'image */
     display: block; /* Pour que l'image se comporte comme un bloc */
     float: left; /* Pour aligner l'image sur le côté gauche */
-    }
-    
+    }   
 audio {
-    height: 20px;
+    height: 25px;
     max-width: 75%;
     padding: 1%;
     border-radius: 5px;
@@ -87,12 +87,15 @@ div.streaming{
     justify-content:center;
 }  
 form {
+    padding-top: 15px;
+    padding-bottom: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: linear-gradient(to left, #b39ddb, #ffd1dc); /* Dégradé de droite à gauche */
 }
 @media screen and (max-width: 600px) {
-    body {
+    p {
         font-size: medium;
     }
     .image_3 {
@@ -120,7 +123,7 @@ form {
 }
 /* Utilisation de la keyframe sur une image avec la classe "rotation-image" */
 .rotation-image {
-    animation: rotation 120s linear infinite; /* Rotation pendant 120 secondes en boucle */  
+    animation: rotation 180s linear infinite; /* Rotation pendant 120 secondes en boucle */  
 }
 .image_4{
     width: 30%;
@@ -151,10 +154,46 @@ h2{
     50% { opacity: 0; }
     100% { opacity: 1; }
 }
-
 .album-announcement h2 {
     font-size: 1.5em;
     margin: 0;
     animation: clignote 3s infinite;
 }
-
+.cube {
+    width: 300px;
+    height: 300px;
+    position:relative;
+    transform-style: preserve-3d;
+    transform: rotateX(30deg) rotateY(30deg);
+    animation: rotate 240s infinite linear;
+    margin: 0 auto; /* Centrer le cube */
+}
+.face {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    backface-visibility: hidden;
+}
+.face img {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+.front  { transform: translateZ(100px); }
+.back   { transform: rotateY(180deg) translateZ(100px); }
+.left   { transform: rotateY(-90deg) translateZ(100px); }
+.right  { transform: rotateY(90deg) translateZ(100px); }
+.top    { transform: rotateX(90deg) translateZ(100px); }
+.bottom { transform: rotateX(-90deg) translateZ(100px); }
+@keyframes rotate {
+    from { transform: rotateX(30deg) rotateY(30deg); }
+    to { transform: rotateX(390deg) rotateY(390deg); }
+}
+figcaption {
+    color:#333;
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+    font-size: smaller;
+}
