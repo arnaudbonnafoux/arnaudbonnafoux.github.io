@@ -460,38 +460,15 @@ Format MP3</p>
 <!--Formulaire-->
 <aside>
 <h2>Newsletter</h2>
-<form action="newsletter" method="post">
-    <label for="email">E-mail</label>
-    <p></p>
-    <input type="email" id="email" name="email" required>
-    <p></p>
-    <input type="submit" value="Ajouter">
+<form action="https://formspree.io/f/xjkblnpa" method="POST">
+    <label for="email">Adresse e-mail :</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+    <input type="submit" value="S'inscrire">
+    <input type="hidden" name="_next" value="https://arnaudbonnafoux.github.io/merci.html">
 </form>
 <p style="text-align: center;">Merci pour votre inscription à ma newsletter ! <br>
     Vous serez redirigé vers la page d'accueil juste après l'ajout de votre e-mail !</p>
 </aside>
-
-<!--Script_formulaire-->
-<script>
-    document.getElementById('myForm').addEventListener('submit', function(event) {
-      event.preventDefault(); // Empêche l'envoi du formulaire par défaut
-      const formData = new FormData(this); // Récupère les données du formulaire
-
-      fetch('https://votre-adresse-ip-ou-domaine.com/newsletter', {
-        method: 'POST',
-        body: formData // Envoie les données du formulaire
-      })
-      .then(response => response.text()) // Traite la réponse en texte
-      .then(data => {
-        console.log(data);
-        alert(data); // Affiche la réponse du serveur
-      })
-      .catch(error => {
-        console.error('Error:', error);
-        alert('Une erreur est survenue lors de l\'inscription à la newsletter.'); // Affiche un message en cas d'erreur
-      });
-    });
-  </script>
 
 <!--Mécénat-->
 <aside>
