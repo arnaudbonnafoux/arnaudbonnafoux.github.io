@@ -14,7 +14,7 @@ footer {
     border-radius: 25px;
 }
 a {
-    color: #fafafa; 
+    color: #f5f5f5; 
     text-decoration: none;
 }
 header {
@@ -25,7 +25,7 @@ header {
     border-radius: 25px;
 }
 body {
-    background-color: #ffd1dc;
+    background-color: #f5f5f5;
     font-family: 'Roboto', sans-serif; 
     margin-top: 2%;
     margin-left: 2%;
@@ -73,6 +73,7 @@ height: 5%; /* Hauteur désirée */
     height: auto; /* Pour conserver les proportions de l'image */
     display: block; /* Pour que l'image se comporte comme un bloc */
     float: left; /* Pour aligner l'image sur le côté gauche */
+    border-radius: 25px;
     }   
 audio {
     height: 25px;
