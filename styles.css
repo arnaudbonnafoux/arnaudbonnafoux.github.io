@@ -14,8 +14,8 @@ footer {
     border-radius: 25px;
 }
 a {
-    color: #f5f5f5; 
-    text-decoration: none;
+    color: #b39ddb;
+    text-decoration: line-through;
 }
 header {
     background-color:#b39ddb;
