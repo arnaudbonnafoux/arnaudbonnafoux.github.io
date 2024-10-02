@@ -126,7 +126,7 @@ form {
 }
 /* Utilisation de la keyframe sur une image avec la classe "rotation-image" */
 .rotation-image {
-    animation: rotation 5s linear infinite; /* Rotation pendant 120 secondes en boucle */  
+    animation: rotation 5s linear infinite; /* Rotation pendant 5 secondes en boucle */  
 }
 .image_4{
     width: 30%;
@@ -167,8 +167,8 @@ h2{
     height: 300px;
     position:relative;
     transform-style: preserve-3d;
-    transform: rotateX(30deg) rotateY(30deg);
-    animation: rotate 240s infinite linear;
+    transform: rotateX(60deg) rotateY(60deg);
+    animation: rotate 60s infinite linear;
     margin: 0 auto; /* Centrer le cube */
 }
 .face {
