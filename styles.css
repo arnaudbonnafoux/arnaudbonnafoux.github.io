@@ -65,8 +65,8 @@ height: 5%; /* Hauteur désirée */
 }
 .image_3 {
     width: auto;
-    height: 50px;
-    padding: 15px;
+    height: 45px;
+    padding: 5px;
 }
 .image_5 {
     max-width: 50%; /* Pour que l'image reste dans les limites de son conteneur */
