@@ -66,7 +66,7 @@ height: 5%; /* Hauteur désirée */
 .image_3 {
     width: auto;
     height: 50px;
-    padding: 10px;
+    padding: 12px;
 }
 .image_5 {
     max-width: 50%; /* Pour que l'image reste dans les limites de son conteneur */
@@ -126,7 +126,7 @@ form {
 }
 /* Utilisation de la keyframe sur une image avec la classe "rotation-image" */
 .rotation-image {
-    animation: rotation 180s linear infinite; /* Rotation pendant 120 secondes en boucle */  
+    animation: rotation 5s linear infinite; /* Rotation pendant 120 secondes en boucle */  
 }
 .image_4{
     width: 30%;
