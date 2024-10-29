@@ -6,7 +6,7 @@ Vous y trouverez une biographie détaillant mon parcours en tant que compositeur
 
 ## Licence
 
-Ce site et son contenu sont protégés par le droit d'auteur © Arnaud Bonnafoux 2024. Tous droits réservés.
+Ce site et son contenu sont protégés par le droit d'auteur © duanrA 2024. Tous droits réservés.
 
 L'utilisation, la reproduction, ou la distribution de tout contenu de ce site est strictement interdite sans l'autorisation préalable de l'auteur. Cependant, une autorisation peut être accordée sous certaines conditions. Si vous souhaitez utiliser le contenu de ce site, veuillez envoyer une demande.
 
