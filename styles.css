@@ -129,7 +129,8 @@ form {
     animation: rotation 5s linear infinite; /* Rotation pendant 5 secondes en boucle */  
 }
 .image_4{
-    width: 30%;
+    width: 120px;
+    height: auto;
     display: block; /* Pour s'assurer que la marge automatique fonctionne */
     margin: 0 auto; /* Margin automatique sur les côtés gauche et droit */
 }
