@@ -110,7 +110,7 @@ form {
     .image_3 {
         width: auto;
         height: 15px;
-}
+    }
 }
 @media screen and (min-width: 1200px) {
     section {
@@ -196,6 +196,7 @@ h2{
 .right  { transform: rotateY(90deg) translateZ(100px); }
 .top    { transform: rotateX(90deg) translateZ(100px); }
 .bottom { transform: rotateX(-90deg) translateZ(100px); }
+
 @keyframes rotate {
     from { transform: rotateX(30deg) rotateY(30deg); }
     to { transform: rotateX(390deg) rotateY(390deg); }
