@@ -43,7 +43,7 @@ section {
 }  
 article {
     color: #333;
-    padding: 15px;
+    padding: 10px;
     text-align: center;
     font-size: 14px;  
     background-color: rgba(255, 209, 220, 0.3); /* Rouge avec une opacité de 50% */
@@ -70,9 +70,10 @@ height: 5%; /* Hauteur désirée */
 }
 .image_3 {
     width: auto;
-    height: 25px;
-    padding: 12px;
-}
+    height: 50px;
+    padding: 25px;
+    }
+
 .image_5 {
     max-width: 50%; /* Pour que l'image reste dans les limites de son conteneur */
     height: auto; /* Pour conserver les proportions de l'image */
@@ -109,7 +110,7 @@ form {
     }
     .image_3 {
         width: auto;
-        height: 15px;
+        height: 35px;
     }
 }
 @media screen and (min-width: 1200px) {
@@ -207,4 +208,7 @@ figcaption {
     margin-top: 10px;
     font-style: italic;
     font-size: smaller;
+}
+iframe {
+    padding-bottom : 20px;
 }
