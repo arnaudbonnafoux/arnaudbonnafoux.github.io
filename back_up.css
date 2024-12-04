@@ -1,0 +1,214 @@
+p {
+    font-family: 'Roboto', sans-serif; /* Choisissez une police qui convient à votre style */
+    font-size: 14px; /* Ajustez la taille de la police selon vos préférences */
+    line-height: 1.6; /* Ajustez l'espacement entre les lignes du texte */
+    color: #333; /* Choisissez une couleur de texte qui s'harmonise avec votre palette de couleurs */
+    margin-bottom: 15px; /* Ajoute de l'espace en bas de chaque paragraphe */
+    text-align: justify; /* Alignement justifié du texte */
+}
+footer {
+    background-color:#191919;
+    color:#f5f5f5;
+    padding: 10px;
+    margin-top: 5%;
+    border-radius: 25px;
+}
+a {
+    color: #b39ddb;
+    text-decoration: line-through;
+}
+header {
+    background-color:#191919;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 200px;
+    display: flex;
+    color: #f5f5f5;
+    border-radius: 25px;
+}
+body {
+    background-image: url('Images/background_image.jpg');
+    font-family: 'Roboto', sans-serif;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+article {
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    background-color: rgba(255, 209, 220, 0.3); /* Rouge avec une opacité de 50% */
+    /*background: linear-gradient(to left, #b39ddb, #ffd1dc); /* Dégradé de droite à gauche */
+    border-radius: 25px;
+}
+input[type="email"] {
+width: 225px; /* Largeur désirée */
+height: 5%; /* Hauteur désirée */
+}
+.image_1 {
+    max-width: auto;
+    height: auto;
+    display: flex; /* Utilisation de Flexbox */
+    align-items: center; /* Pour centrer verticalement */
+    justify-content: center; /* Pour centrer horizontalement */
+    margin: auto; /* Pour centrer l'image horizontalement */
+}
+.image_2 {
+    max-width: 8%;
+    height: auto;
+    display: block; /* Pour résoudre le problème de la marge inférieure dans certains cas */
+    margin:auto;
+}
+.image_3 {
+    width: auto;
+    height: 50px;
+    padding: 25px;
+    }
+
+.image_5 {
+    max-width: 50%; /* Pour que l'image reste dans les limites de son conteneur */
+    height: auto; /* Pour conserver les proportions de l'image */
+    display: block; /* Pour que l'image se comporte comme un bloc */
+    float: left; /* Pour aligner l'image sur le côté gauche */
+    border-radius: 25px;
+    }
+audio {
+    height: 25px;
+    max-width: 75%;
+    padding: 1%;
+    border-radius: 25px;
+    background-color: #f5f5f5;
+}
+div {
+    display: flex;
+}
+div.streaming{
+    justify-content:center;
+}
+form {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 209, 220, 0.3);
+    /*background: linear-gradient(to left, #b39ddb, #ffd1dc); /* Dégradé de droite à gauche */
+    border-radius: 25px;
+}
+@media screen and (max-width: 600px) {
+    p {
+        font-size: medium;
+    }
+    .image_3 {
+        width: auto;
+        height: 35px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    section {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+@media screen and (max-width: 768px) {
+    p {
+        font-size: small;
+    }
+}
+@keyframes rotation {
+    from {
+    transform: rotate(0deg);
+    }
+    to {
+    transform: rotate(360deg);
+    }
+}
+/* Utilisation de la keyframe sur une image avec la classe "rotation-image" */
+.rotation-image {
+    animation: rotation 5s linear infinite; /* Rotation pendant 5 secondes en boucle */
+}
+.image_4{
+    width: 120px;
+    height: auto;
+    display: block; /* Pour s'assurer que la marge automatique fonctionne */
+    margin: 0 auto; /* Margin automatique sur les côtés gauche et droit */
+}
+h2{
+    text-align: center;
+}
+.sous-titre{
+    text-align: center;
+}
+.album-announcement {
+    background: linear-gradient(to left, #b39ddb, #ffd1dc); /* Dégradé de droite à gauche */
+    color: #333; /* Texte sombre pour un bon contraste */
+    text-align: center;
+    padding: 20px;
+    border-radius: 25px;
+    margin: 20px 0;
+    font-family: 'Roboto', sans-serif;
+}
+.album-announcement h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+@keyframes clignote {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.album-announcement h2 {
+    font-size: 1.5em;
+    margin: 0;
+    animation: clignote 3s infinite;
+}
+.cube {
+    width: 300px;
+    height: 300px;
+    position:relative;
+    transform-style: preserve-3d;
+    transform: rotateX(60deg) rotateY(60deg);
+    animation: rotate 30s infinite linear;
+    margin: 0 auto; /* Centrer le cube */
+}
+.face {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    backface-visibility: hidden;
+}
+.face img {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+.front  { transform: translateZ(100px); }
+.back   { transform: rotateY(180deg) translateZ(100px); }
+.left   { transform: rotateY(-90deg) translateZ(100px); }
+.right  { transform: rotateY(90deg) translateZ(100px); }
+.top    { transform: rotateX(90deg) translateZ(100px); }
+.bottom { transform: rotateX(-90deg) translateZ(100px); }
+
+@keyframes rotate {
+    from { transform: rotateX(30deg) rotateY(30deg); }
+    to { transform: rotateX(390deg) rotateY(390deg); }
+}
+figcaption {
+    color:#333;
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+    font-size: smaller;
+}
+iframe {
+    padding-bottom : 20px;
+}
