@@ -79,7 +79,7 @@ body {
         margin: 0 auto; 
     }
 audio {
-    height: 25px;
+    height: 16px;
     max-width: 75%;
     border-radius: 25px;
     background-color: #f5f5f5;
@@ -124,6 +124,7 @@ h2{
 h3 {
     color:#030027;
     margin: 10px 0;
+    font-size: medium;
 }
 input[type="email"] {
     width: 225px;
