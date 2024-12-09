@@ -23,7 +23,6 @@ header {
     display: flex;
     background-color:rgba(179, 157, 219, 0.5);
     height: 150px;
-    color: #030027;
     border-radius: 25px;
     padding: 10px;
 }
@@ -58,6 +57,10 @@ body {
     object-fit: cover;
     border-radius: 25px;
 }
+.image_2{
+    width: 15%;
+    height: auto;
+}
 @keyframes rotation {
         from {
         transform: rotate(0deg);
@@ -91,9 +94,12 @@ form {
     background-color: rgba(255, 209, 220, 0.2);
     border-radius: 25px;
 }
+h1{
+    color: #030027;
+}
 h2{
     text-align: center;
-    color:#030027
+    color: #030027;
 }
 .sous-titre{
     text-align: center;
@@ -116,36 +122,45 @@ h2{
     font-size: smaller;
 }
 h3 {
+    color:#030027;
     margin: 10px 0;
-    color: #030027;
 }
 input[type="email"] {
     width: 225px;
     height: 5%;
 }
-@media screen and (max-width: 455px) { /* en dessous de 455px */
+@media screen and (max-width: 455px) { /* en dessous de*/
     p {
         font-size: small;
     }
     .image_1{
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
     }
     header {
-        font-size: x-small;
+        font-size: xx-small;
     }
     footer {
         font-size: x-small;
         height: 100px;
     }
+    h2{
+        font-size: large;
+    }
+    h3{
+        font-size: medium;
+    }
 }
-@media screen and (max-width: 900px) { /* en dessous de 900 px */
+@media screen and (max-width: 900px) { /* en dessous de */
     .image_1{
         width: 350px;
         height: 350px;
     }
+    .icon-link {
+        font-size: 12px;
+    }
 }
-@media screen and (min-width: 1920px) { /* au dessus de  */
+@media screen and (min-width: 1920px) { /* au dessus de */
     .image_1{
         width: 850px;
         height: 850px;
@@ -157,10 +172,6 @@ input[type="email"] {
         height:300px;
         font-size: xx-large;
     }
-    header.img {
-        width: 450px;
-        height: auto;
-    }
     audio {
         height: 25%;
     }
@@ -169,12 +180,13 @@ input[type="email"] {
     }
 }
 .icon-link {
-    text-decoration: none;
-    font-size: 24px;
-    margin: 0 10px;
-    transition: color 0.3s ease;
-    color :#030027
-}
+        text-decoration: none;
+        font-size: 24px;
+        margin: 0 10px;
+        transition: color 0.3s ease;
+        color :#030027
+    }
 .icon-link:hover {
-    opacity: 0.8; /* Effet visuel au survol */
-}
+        opacity: 0.5;
+    }
+
