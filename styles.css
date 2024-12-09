@@ -23,7 +23,7 @@ header {
     display: flex;
     background-color:rgba(179, 157, 219, 0.5);
     height: 150px;
-    color: #f5f5f5;
+    color: #030027;
     border-radius: 25px;
     padding: 10px;
 }
@@ -93,6 +93,7 @@ form {
 }
 h2{
     text-align: center;
+    color:#030027
 }
 .sous-titre{
     text-align: center;
@@ -116,6 +117,7 @@ h2{
 }
 h3 {
     margin: 10px 0;
+    color: #030027;
 }
 input[type="email"] {
     width: 225px;
@@ -165,4 +167,14 @@ input[type="email"] {
     footer {
         font-size :larger;
     }
+}
+.icon-link {
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+    color :#030027
+}
+.icon-link:hover {
+    opacity: 0.8; /* Effet visuel au survol */
 }
