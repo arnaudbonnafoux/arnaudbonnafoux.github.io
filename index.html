@@ -14,8 +14,8 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
-    
 <header>
            <img src="Images/arnaud_6.jpg" alt="Portrait stylisé d'Arnaud Bonnafoux"style="border-radius: 25px;">
             <h1 style="margin-left: 2%">Arnaud Bonnafoux</h1>
@@ -40,10 +40,11 @@
     </a>
 </div>
 
+<!--Albums-->
 <main>
     
     <!--Annonce-->
-    <h3 class="album-announcement" style="text-align: center;">Prochain album : Le 7 février !</h3>
+    <!--<h3 class="album-announcement" style="text-align: center;">Prochain album : Le 7 février !</h3>-->
     
     <!--Bio et descriptif-->
     <div class="text">
@@ -72,8 +73,43 @@
                 <span class="highlight">Juliette Armanet</span> (chanson), <span class="highlight">La Cie Desidelà</span> (danse contemporaine), 
                 <span class="highlight">La Cie Tempo Cantabile</span> (danse contemporaine), et <span class="highlight">Space Raccoon</span> (free-jazz).<br>
                 Toute cette riche expérience scénique constitue aujourd'hui l'« ADN » de mon travail actuel. 
-                En juin 2021, j'ai publié mon premier album, <em>After the Future</em>, suivi de cinq EPs : <em>The Light of Inside</em>, <em>Strange Mind</em>, 
-                <em>Blue Explosion</em>, <em>Nostalgie Fantôme</em> et <em>Portraits mythiques</em>.</p>
+                En juin 2021, j'ai publié mon premier album, <em>After the Future</em>, suivi de six EPs : <em>The Light of Inside</em>, <em>Strange Mind</em>, 
+                <em>Blue Explosion</em>, <em>Nostalgie Fantôme</em>, <em>Portraits mythiques</em> et <em>État de superposition</em>.</p>
+        </div>
+    </div>
+
+    <!--Album_7-->
+    <h2>État de superposition</h2>
+    <p class="sous-titre">Dernier EP publié le 7 février 2025.<br>
+            Format wav 16-bit/44.1kHz</p>
+    <p class="artwork">Artwork : &COPY; duanrA</p>
+        
+    <div class="text">
+        <div class="text_2">
+            <img src="Images/état_de_superposition.png" alt="visuel de l'album" class="image_1">
+        </div>
+        
+        <div class="text_3">
+            <h3>État de superposition</h3>
+            <audio controls>
+                <source src="état_de_superposition_16-bit/1-état_de_superposition_16-bit.wav" type="audio/wav">
+            </audio>
+        
+            <h3>Échos du vortex</h3>
+        
+            <audio controls>
+                <source src="état_de_superposition_16-bit/2-échos_du_vortex_16-bit.wav" type="audio/wav">
+            </audio>
+        
+            <h3>Spirale de l'infini</h3>
+            <audio controls>
+                <source src="état_de_superposition_16-bit/3-spirale_de_l'infini_16-bit.wav" type="audio/wav">
+            </audio>
+        
+            <h3>Chant du singulier</h3>
+            <audio controls>
+                <source src="état_de_superposition_16-bit/4-chant_du_singulier_16-bit.wav" type="audio/wav">
+            </audio>
         </div>
     </div>
     
@@ -397,11 +433,40 @@
         <h2 style="text-align: center;"">Contact</h2>
         <div style="display: flex; justify-content: center; align-items: center;">
             <i class="fa fa-envelope rotation-image" style="margin-right: 10px; font-size: x-large; color:#030027"></i>
-            <a href="mailto:bonnafouxarnaud@gmail.com" style="color: #f5f5f5;">
+            <a href="mailto:bonnafouxarnaud@gmail.com" style="color: #030027;">
             bonnafouxarnaud@gmail.com</a>
         </div>
-        <p style="text-align: center;font-size: smaller; color: #f5f5f5; padding-bottom: 10px;">
-            &copy; 2024 duanrA. 
-                Ce projet est sous <a href="https://opensource.org/licenses/MIT" target="_blank" style="color: #f5f5f5;">licence MIT</a>.
+        <p style="text-align: center;font-size: smaller; color: #030027; padding-bottom: 10px;">
+            &copy; 2025 duanrA. 
+                Ce projet est sous <a href="https://opensource.org/licenses/MIT" target="_blank" style="color: #030027;">licence MIT</a>.
         </p>
+        <div style="display: flex; justify-content: center; gap: 100px; color: #030027;">
+        <button id="btnMentionsLegales" class="rotation-image">Mentions légales</button>
+        <button id="btnConditionsUtilisation" class="rotation-image">Conditions d'utilisation</button>
+        </div>
 </footer>
+
+<!--Mention légales et conditions d'utlisation-->
+<script>
+    document.getElementById("btnMentionsLegales").addEventListener("click", function () {
+        alert("Mentions légales :\n\n" +
+            "Nom du site : Arnaud Bonnafoux\n" +
+            "Responsable de la publication : duanrA\n" +
+            "Contact : bonnafouxarnaud@gmail.com\n\n" +
+            "Hébergement : Ce site est hébergé via GitHub Pages, un service de GitHub, Inc., basé au 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA.\n\n" +
+            "Licence : Le code source de ce site est distribué sous la licence MIT. Vous pouvez consulter les détails de la licence ici : https://opensource.org/licenses/MIT.\n\n" +
+            "Cookies et données personnelles : Ce site n’utilise pas de cookies et ne collecte aucune donnée personnelle."
+        );
+    });
+
+    document.getElementById("btnConditionsUtilisation").addEventListener("click", function () {
+        alert("Conditions d'utilisation :\n\n" +
+            "1. Propriété intellectuelle : Le contenu du site est protégé par le droit d’auteur. Le code source est distribué sous licence MIT, permettant une utilisation, modification et distribution avec mention de l’auteur original.\n" +
+            "2. Utilisation des services : Ce site est accessible pour un usage personnel uniquement.\n" +
+            "3. Responsabilité : Le responsable du site décline toute responsabilité en cas de mauvaise utilisation des informations ou de problèmes techniques.\n" +
+            "4. Liens externes : Ce site peut contenir des liens vers des sites tiers. Nous ne garantissons pas leur contenu ou leur disponibilité.\n" +
+            "5. Mise à jour : Les conditions d'utilisation peuvent être modifiées à tout moment sans préavis."
+        );
+    });
+</script>
+</body>
