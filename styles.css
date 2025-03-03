@@ -173,9 +173,11 @@ input[type="email"] {
     p {
         font-size:large;
     }
-
-    h1,h2,h3 {
+    h1,h2 {
         font-size: xx-large;
+    }
+    h3 {
+        font-size: large;
     }
     header {
         height:300px;
