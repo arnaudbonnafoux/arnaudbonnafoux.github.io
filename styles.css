@@ -167,18 +167,22 @@ input[type="email"] {
 }
 @media screen and (min-width: 1920px) { /* au dessus de */
     .image_1{
-        width: 850px;
-        height: 850px;
+        width: 650px;
+        height: 650px;
     }
-    p{
-        font-size:xx-large;
+    p {
+        font-size:large;
+    }
+
+    h1,h2,h3 {
+        font-size: xx-large;
     }
     header {
         height:300px;
         font-size: xx-large;
     }
     audio {
-        height: 25%;
+        height: 25px;
     }
     footer {
         font-size :larger;
