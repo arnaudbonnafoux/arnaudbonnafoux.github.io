@@ -167,6 +167,9 @@ input[type="email"] {
     .icon-link {
         font-size: 16px;
     }
+    p{
+        font-size: small;
+    }
 }
 @media screen and (min-width: 1920px) { /* au dessus de */
     .image_1{
