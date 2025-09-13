@@ -1,18 +1,13 @@
-# 🌐 Page de maintenance — Arnaud Bonnafoux
+# 🎶 Site vitrine - Arnaud Bonnafoux
 
-Ce dépôt contient le code source de la page **« Site en maintenance »** actuellement affichée sur [mon site web](https://arnaudbonnafoux.github.io).  
-Elle permet d’informer les visiteurs que le site principal est en cours de refonte avec un **nouveau design**.
+Site vitrine dédié à la musique électronique.  
+Il présente mes albums et propose des liens vers Spotify, Deezer, YouTube, iTunes et Bandcamp.  
+Un formulaire d’inscription permet de rejoindre la newsletter.  
 
----
+👉 En ligne ici : [arnaudbonnafoux.github.io](https://arnaudbonnafoux.github.io/)
 
-## 🚧 Aperçu
+## 🛠️ Techno
+HTML5 · CSS3 · Font Awesome · Formspree · GitHub Pages
 
-- Message clair : « Site en maintenance »  
-- Icônes avec liens directs vers les plateformes de streaming :  
-  - Spotify  
-  - Deezer  
-  - YouTube  
-  - Apple Music / iTunes  
-  - Bandcamp  
-- Design simple, responsive et léger, adapté pour GitHub Pages.
-
+## 📜 Licence
+Code distribué sous licence MIT.

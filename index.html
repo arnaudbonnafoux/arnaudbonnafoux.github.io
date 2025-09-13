@@ -4,102 +4,94 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Site en maintenance</title>
+  <title>Arnaud Bonnafoux</title>
   <meta name="description"
-    content="Notre site est temporairement indisponible, nous travaillons sur un nouveau design. Nous revenons très vite !">
+    content="Site consacré à la musique électronique">
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style_2.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    body {
-      margin: 0;
-      font-family: system-ui, sans-serif;
-      background: #f5f5f5;
-      color: #2C4251;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-      padding: 20px;
-    }
 
-    .box {
-      background: white;
-      border-radius: 12px;
-      padding: 40px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
-      max-width: 480px;
-    }
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon_io/site.webmanifest">
 
-    h1 {
-      margin-top: 0;
-      font-size: 1.8rem;
-    }
-
-    p {
-      margin-bottom: 1.5em;
-    }
-
-    .footer {
-      font-size: 0.9rem;
-    }
-
-    .streaming-links {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      margin: 25px 0;
-      font-size: 1.8rem;
-    }
-
-    .icon-link {
-      color: #2C4251;
-      transition: transform 0.2s, color 0.2s;
-    }
-
-    .icon-link:hover {
-      color: #152028;
-      transform: scale(1.2);
-    }
-
-    .rotation-image {
-      transition: transform 0.6s ease;
-    }
-
-    .icon-link:hover .rotation-image {
-      transform: rotate(360deg);
-    }
-  </style>
 </head>
 
 <body>
-  <div class="box">
-    <h1>🚧 Site en maintenance</h1>
-    <p>Nous travaillons actuellement sur un tout nouveau design.<br>Le site sera de retour très bientôt.</p>
+  <header>
+    <div class="div_header">
+      <img class="visuel_1" src="images/visuel_1.jpg" alt="logo de l'artiste">
+      <h1>Arnaud Bonnafoux</h1>
+    </div>
+  </header>
 
-    <!-- Logos Streaming -->
-    <div class="streaming-links">
-      <a href="https://open.spotify.com/intl-fr/artist/2yuWXjPpw072E1CIxgDkf7?si=KJesjskNRmOelWMnlLbsyA" target="_blank"
-        class="icon-link" title="Spotify">
-        <i class="fa-brands fa-spotify rotation-image"></i>
-      </a>
-      <a href="https://deezer.page.link/JBW8SLRxjViQ7pfv5" target="_blank" class="icon-link" title="Deezer">
-        <i class="fa-brands fa-deezer rotation-image"></i>
-      </a>
-      <a href="https://youtube.com/channel/UCnl0tnLz4M9_VzUUIfBWQvA?feature=shared" target="_blank" class="icon-link"
-        title="YouTube">
-        <i class="fa-brands fa-youtube rotation-image"></i>
-      </a>
-      <a href="https://music.apple.com/fr/artist/arnaud-bonnafoux/1685868826" target="_blank" class="icon-link"
-        title="iTunes">
-        <i class="fa-brands fa-itunes-note rotation-image"></i>
-      </a>
-      <a href="https://arnaud-bonnafoux.bandcamp.com/follow_me" target="_blank" class="icon-link" title="Bandcamp">
-        <i class="fa-brands fa-bandcamp rotation-image"></i>
-      </a>
+  <div class="div_box">
+    <img style="border-radius: 12px; box-shadow: 0 4px 16px rgba(0, 0, 0, .2);" src="images/visuel_2.jpg" alt="contrôleur midi">
+    <div class="box">
+      <h2>Une envie de musique !?</h2>
+      <p>Pour découvrir mes albums, <br>je t'invite à suivre les liens ci-dessous.</p>
+      <p>👇 👇 👇</p>
+
+      <!-- Logos Streaming -->
+      <div class="streaming-links">
+        <a href="https://open.spotify.com/intl-fr/artist/2yuWXjPpw072E1CIxgDkf7?si=KJesjskNRmOelWMnlLbsyA"
+          target="_blank" class="icon-link" title="Spotify">
+          <i class="fa-brands fa-spotify rotation-image"></i>
+        </a>
+        <a href="https://deezer.page.link/JBW8SLRxjViQ7pfv5" target="_blank" class="icon-link" title="Deezer">
+          <i class="fa-brands fa-deezer rotation-image"></i>
+        </a>
+        <a href="https://youtube.com/channel/UCnl0tnLz4M9_VzUUIfBWQvA?feature=shared" target="_blank" class="icon-link"
+          title="YouTube">
+          <i class="fa-brands fa-youtube rotation-image"></i>
+        </a>
+        <a href="https://music.apple.com/fr/artist/arnaud-bonnafoux/1685868826" target="_blank" class="icon-link"
+          title="iTunes">
+          <i class="fa-brands fa-itunes-note rotation-image"></i>
+        </a>
+        <a href="https://arnaud-bonnafoux.bandcamp.com/follow_me" target="_blank" class="icon-link" title="Bandcamp">
+          <i class="fa-brands fa-bandcamp rotation-image"></i>
+        </a>
+      </div>
+      <p class="footer">Merci ! ❤️</p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="div_form">
+      <h2>Newsletter</h2>
+      <form action="https://formspree.io/f/xjkblnpa" method="POST" id="newsletterForm">
+  <label for="email">Adresse e-mail :</label><br><br>
+  <input type="email" id="email" name="email"
+         required maxlength="254"
+         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br><br>
+
+  <!-- Honeypot anti-spam -->
+  <input type="text" name="_gotcha" style="display:none">
+
+  <button type="submit" class="btn-submit">
+    S’inscrire <i class="fa-solid fa-paper-plane"></i>
+  </button>
+
+  <input type="hidden" name="_next" value="https://arnaudbonnafoux.github.io/index.html">
+</form>
+
+      <p>Merci pour votre inscription à ma newsletter ! <br>
+        Vous serez redirigé vers la page d'accueil juste après l'ajout de votre e-mail !</p>
     </div>
 
-    <p class="footer">Merci de votre patience ❤️</p>
-  </div>
+<div class="div_footer">
+  <a class="lien_footer" href="mentions_légales.html">Mentions légales</a>
+  <a class="lien_footer" href="cgu.html">Conditions d’utilisation</a>
+</div>
+
+    <p style="font-size: x-small; text-align: center;">&copy; 2025 duanrA.</p>
+  </footer>
+
+  <!--Mention légales et conditions d'utlisation-->
+
 </body>
 
 </html>
