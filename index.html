@@ -5,9 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Arnaud Bonnafoux</title>
-  <meta name="description"
-    content="Site consacré à la musique électronique">
-  
+  <meta name="description" content="Site consacré à la musique électronique">
+
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="style_2.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -28,7 +27,8 @@
   </header>
 
   <div class="div_box">
-    <img style="border-radius: 12px; box-shadow: 0 4px 16px rgba(0, 0, 0, .2);" src="images/visuel_2.jpg" alt="contrôleur midi">
+    <img style="border-radius: 12px; box-shadow: 0 4px 16px rgba(0, 0, 0, .2);" src="images/visuel_2.jpg"
+      alt="contrôleur midi">
     <div class="box">
       <h2>Une envie de musique !?</h2>
       <p>Pour découvrir mes albums, <br>je t'invite à suivre les liens ci-dessous.</p>
@@ -63,29 +63,43 @@
     <div class="div_form">
       <h2>Newsletter</h2>
       <form action="https://formspree.io/f/xjkblnpa" method="POST" id="newsletterForm">
-  <label for="email">Adresse e-mail :</label><br><br>
-  <input type="email" id="email" name="email"
-         required maxlength="254"
-         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br><br>
+        <label for="email">Adresse e-mail :</label><br><br>
+        <input type="email" id="email" name="email" required maxlength="254"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br><br>
 
-  <!-- Honeypot anti-spam -->
-  <input type="text" name="_gotcha" style="display:none">
+        <!-- Honeypot anti-spam -->
+        <input type="text" name="_gotcha" style="display:none">
 
-  <button type="submit" class="btn-submit">
-    S’inscrire <i class="fa-solid fa-paper-plane"></i>
-  </button>
+        <button type="submit" class="btn-submit">
+          S’inscrire <i class="fa-solid fa-paper-plane"></i>
+        </button>
 
-  <input type="hidden" name="_next" value="https://arnaudbonnafoux.github.io/index.html">
-</form>
+        <input type="hidden" name="_next" value="https://arnaudbonnafoux.github.io/index.html">
+      </form>
+      <script>
+        const form = document.getElementById("newsletterForm");
+
+        form.addEventListener("submit", function (e) {
+          // petite sécurité côté client
+          let email = document.getElementById("email");
+          email.value = email.value.replace(/[<>"'`;(){}]/g, "");
+
+          // On attend que Formspree traite le formulaire
+          setTimeout(() => {
+            email.value = ""; // vide le champ
+          }, 100); // délai très court pour laisser le formulaire se soumettre
+        });
+      </script>
+
 
       <p>Merci pour votre inscription à ma newsletter ! <br>
         Vous serez redirigé vers la page d'accueil juste après l'ajout de votre e-mail !</p>
     </div>
 
-<div class="div_footer">
-  <a class="lien_footer" href="mentions_légales.html">Mentions légales</a>
-  <a class="lien_footer" href="cgu.html">Conditions d’utilisation</a>
-</div>
+    <div class="div_footer">
+      <a class="lien_footer" href="mentions_légales.html">Mentions légales</a>
+      <a class="lien_footer" href="cgu.html">Conditions d’utilisation</a>
+    </div>
 
     <p style="font-size: x-small; text-align: center;">&copy; 2025 duanrA.</p>
   </footer>
