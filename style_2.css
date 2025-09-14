@@ -1,8 +1,4 @@
-/* ============================= */
-/* 🌍 Responsive Design */
-/* ============================= */
-
-/* 📱 Mobiles (écrans < 600px) */
+/* Mobiles (écrans < 600px) */
 @media (max-width: 600px) {
   body {
     font-size: 14px;
@@ -18,15 +14,12 @@
   }
 
   img {
-    /*background: rgba(255, 255, 240, 0.5);*/
     max-width: 90%;
-    /*padding: 16px;*/
   }
 
   .box {
     width: 90%;
     height: auto;
-    /*padding: 16px;*/
   }
 
   .streaming-links {
@@ -44,18 +37,18 @@
   }
 
   .visuel_1 {
-    max-width: 15%; /* logo un peu plus grand */
+    max-width: 15%;
   }
 }
 
-/* 📱➡️💻 Tablettes (600px à 1024px) */
+/* Tablettes (600px à 1024px) */
 @media (min-width: 601px) and (max-width: 1024px) {
   body {
     font-size: 16px;
   }
 
   .div_box {
-    flex-direction: column; /* empile image + box */
+    flex-direction: column;
     height: auto;
   }
 
@@ -78,7 +71,7 @@
   }
 }
 
-/* 💻 Ordinateurs (>= 1025px) */
+/* Ordinateurs (>= 1025px) */
 @media (min-width: 1025px) {
   body {
     font-size: 18px;

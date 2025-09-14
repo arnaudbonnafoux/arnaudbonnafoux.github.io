@@ -80,14 +80,12 @@
         const form = document.getElementById("newsletterForm");
 
         form.addEventListener("submit", function (e) {
-          // petite sécurité côté client
           let email = document.getElementById("email");
           email.value = email.value.replace(/[<>"'`;(){}]/g, "");
 
-          // On attend que Formspree traite le formulaire
           setTimeout(() => {
-            email.value = ""; // vide le champ
-          }, 100); // délai très court pour laisser le formulaire se soumettre
+            email.value = "";
+          }, 100); 
         });
       </script>
 
@@ -103,8 +101,6 @@
 
     <p style="font-size: x-small; text-align: center;">&copy; 2025 duanrA.</p>
   </footer>
-
-  <!--Mention légales et conditions d'utlisation-->
 
 </body>
 
