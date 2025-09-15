@@ -7,6 +7,7 @@
   .div_box {
     flex-direction: column; /* image au-dessus du bloc */
     height: auto;
+    padding:20px 0 20px 0;
   }
 
   h1 {
