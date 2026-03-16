@@ -22,3 +22,38 @@
     });
   });
 })();
+
+// Protect images against download
+(function() {
+  'use strict';
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const protectedImages = document.querySelectorAll('.protected-image');
+    
+    protectedImages.forEach(img => {
+      // Prevent drag and drop
+      img.addEventListener('dragstart', function(e) {
+        e.preventDefault();
+        return false;
+      });
+      
+      // Prevent context menu on right-click
+      img.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+        return false;
+      });
+      
+      // Prevent double-click selection
+      img.addEventListener('dblclick', function(e) {
+        e.preventDefault();
+        return false;
+      });
+      
+      // Prevent copy
+      img.addEventListener('copy', function(e) {
+        e.preventDefault();
+        return false;
+      });
+    });
+  });
+})();
