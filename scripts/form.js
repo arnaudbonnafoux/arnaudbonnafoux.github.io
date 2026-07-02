@@ -8,7 +8,7 @@
     if (!newsletterForm) return;
 
     newsletterForm.addEventListener('submit', function(e) {
-      const emailField = document.getElementById('email');
+      const emailField = document.getElementById('email-newsletter');
       
       if (emailField) {
         const sanitized = emailField.value
