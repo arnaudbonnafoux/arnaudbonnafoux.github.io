@@ -2,7 +2,17 @@
 (function() {
   'use strict';
 
-  document.addEventListener('DOMContentLoaded', function() {
+  function initFadeInAnimations() {
+    const fadeInElements = document.querySelectorAll('.fade-in');
+
+    if (fadeInElements.length === 0) return;
+
+    // Fallback for browsers/environments with partial API support.
+    if (!('IntersectionObserver' in window)) {
+      fadeInElements.forEach(element => element.classList.add('visible'));
+      return;
+    }
+
     const observerOptions = {
       threshold: 0.1,
       rootMargin: '0px 0px -100px 0px'
@@ -17,10 +27,16 @@
       });
     }, observerOptions);
 
-    document.querySelectorAll('.fade-in').forEach(element => {
+    fadeInElements.forEach(element => {
       observer.observe(element);
     });
-  });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initFadeInAnimations, { once: true });
+  } else {
+    initFadeInAnimations();
+  }
 })();
 
 // Protect images against download

@@ -195,15 +195,7 @@
   </footer>
 
   <!-- Scripts (Defer for performance) -->
-  <!-- Load animations.js conditionally only if fade-in elements exist -->
-  <script>
-    if (document.querySelectorAll('.fade-in').length > 0) {
-      const script = document.createElement('script');
-      script.src = 'scripts/animations.js';
-      script.defer = true;
-      document.head.appendChild(script);
-    }
-  </script>
+  <script defer src="scripts/animations.js"></script>
   <script defer src="scripts/form.js"></script>
 
 </body>
