@@ -39,6 +39,44 @@
   }
 })();
 
+(function() {
+  'use strict';
+
+  function initAboutProjectModal() {
+    const modal = document.querySelector('#about-project-modal');
+    const openButton = document.querySelector('.about-project-button');
+    const headerImage = document.querySelector('header .visuel_1');
+    const closeButton = modal?.querySelector('[data-modal-close]');
+
+    if (!modal || !openButton || !headerImage || !closeButton) return;
+
+    openButton.addEventListener('click', function() {
+      const imageBounds = headerImage.getBoundingClientRect();
+      modal.style.top = `${imageBounds.bottom + 12}px`;
+      modal.style.left = `${Math.max(16, imageBounds.left)}px`;
+      modal.showModal();
+    });
+
+    closeButton.addEventListener('click', function() {
+      modal.close();
+      openButton.focus();
+    });
+
+    modal.addEventListener('click', function(event) {
+      if (event.target === modal) {
+        modal.close();
+        openButton.focus();
+      }
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAboutProjectModal, { once: true });
+  } else {
+    initAboutProjectModal();
+  }
+})();
+
 // Protect images against download
 (function() {
   'use strict';

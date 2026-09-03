@@ -85,10 +85,27 @@
 
   <header class="fade-in">
     <div class="div_header">
-      <img class="visuel_1 protected-image" src="images/visuel_3.webp" alt="Logo de l'artiste Arnaud Bonnafoux" draggable="false" oncontextmenu="return false;">
+      <div class="header-project-info">
+        <img class="visuel_1 protected-image" src="images/visuel_3.webp" alt="Logo de l'artiste Arnaud Bonnafoux" draggable="false" oncontextmenu="return false;">
+        <button type="button" class="about-project-button" aria-haspopup="dialog" aria-controls="about-project-modal">
+          À propos du projet
+        </button>
+      </div>
       <h1>Arnaud Bonnafoux</h1>
     </div>
   </header>
+
+  <dialog id="about-project-modal" class="about-project-modal" aria-labelledby="about-project-title">
+    <div class="about-project-content">
+      <div class="about-project-heading">
+        <h2 id="about-project-title">À propos du projet</h2>
+        <button type="button" class="modal-close-button" aria-label="Fermer la fenêtre" data-modal-close>
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <p>La démarche musicale de ce projet s'apparente à une entreprise esthétique plurielle et métissée, qui tente, par l'expérimentation, la composition et l'improvisation, de produire une musique originale et décalée. Située entre les musiques électroniques "pop" et électroacoustiques, la démarche compositionnelle du projet reste modeste et minimaliste dans sa réalisation.</p>
+    </div>
+  </dialog>
 
   <main id="main-content">
     <div class="div_box">
