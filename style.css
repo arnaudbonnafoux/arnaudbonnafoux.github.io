@@ -22,6 +22,20 @@ body{font-family:system-ui,sans-serif;background-color:rgba(44,66,81,.05);color:
   border-radius: 12px;
 }
 
+body {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.78)), url("images/visuel_10.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-attachment: scroll;
+  }
+}
+
 .streaming-links .icon-link {
   display: inline-flex;
   align-items: center;
