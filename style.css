@@ -21,3 +21,23 @@ body{font-family:system-ui,sans-serif;background-color:rgba(44,66,81,.05);color:
 .release-section audio {
   border-radius: 12px;
 }
+
+.streaming-links .icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.streaming-letter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1em;
+  height: 1.2em;
+  font-family: inherit;
+  font-size: 1.15em;
+  font-weight: 700;
+  line-height: 1;
+}
