@@ -85,6 +85,117 @@
         background-color: rgba(30, 30, 35, 0.55);
       }
     }
+
+    .rain-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      overflow: hidden;
+      pointer-events: none;
+      opacity: 0;
+      animation: rain-intro 2.4s ease-out forwards;
+    }
+
+    .rain-image {
+      position: relative;
+      display: block;
+      line-height: 0;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+
+    main .div_box {
+      width: 95%;
+      margin-inline: auto;
+      box-sizing: border-box;
+    }
+
+    .rain-image .visuel_2 {
+      display: block;
+    }
+
+    .rain-overlay {
+      border-radius: inherit;
+    }
+
+    @media (min-width: 1025px) {
+      main .div_box {
+        align-items: stretch;
+      }
+
+      .rain-image {
+        width: min(58vw, 1400px);
+        max-width: 1400px;
+        align-self: stretch;
+      }
+
+      .rain-image .visuel_2 {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .rain-image {
+        width: 75%;
+      }
+
+      .rain-image .visuel_2 {
+        width: 100%;
+      }
+    }
+
+    @media (min-width: 601px) and (max-width: 1024px) {
+      .rain-image {
+        width: 80%;
+        max-width: 80%;
+      }
+
+      .rain-image .visuel_2 {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+
+    .rain-overlay::before,
+    .rain-overlay::after {
+      content: "";
+      position: absolute;
+      inset: -100%;
+      background-image: repeating-linear-gradient(
+        105deg,
+        transparent 0 38px,
+        rgba(255, 255, 255, 0.16) 39px 41px,
+        transparent 42px 82px
+      );
+      background-size: 82px 82px;
+      animation: rain-fall 12s linear infinite;
+    }
+
+    .rain-overlay::after {
+      background-size: 137px 137px;
+      opacity: 0.55;
+      animation-duration: 18s;
+      animation-delay: -0.45s;
+    }
+
+    @keyframes rain-intro {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes rain-fall {
+      from { transform: translate3d(0, -82px, 0); }
+      to { transform: translate3d(82px, 82px, 0); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .rain-overlay {
+        display: none;
+      }
+    }
   </style>
 
   <!-- Favicon -->
@@ -125,8 +236,11 @@
 
   <main id="main-content">
     <div class="div_box">
-      <img class="visuel_2 protected-image" src="images/visuel_site.webp"
-        alt="Équipement de production musicale éclairé de couleurs vives" draggable="false" oncontextmenu="return false;">
+      <div class="rain-image">
+        <img class="visuel_2 protected-image" src="images/visuel_site.webp"
+          alt="Équipement de production musicale éclairé de couleurs vives" draggable="false" oncontextmenu="return false;">
+        <div class="rain-overlay" aria-hidden="true"></div>
+      </div>
       <div class="box fade-in">
         <h2>Une envie de musique !?</h2>
         <p>Pour découvrir mes albums, <br>je t'invite à suivre les liens ci-dessous.</p>
