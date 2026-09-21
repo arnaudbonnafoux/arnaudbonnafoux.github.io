@@ -10,6 +10,7 @@
 @media (min-width:1025px){.div_box{height:800px;min-height:800px;padding:20px 0}}
 @media (min-width:3840px){.div_box{height:900px;min-height:900px}}
 @media (min-width:3840px){h1{font-size:clamp(2.5rem,4vw,5rem)}}
+@media (min-width:3840px){.header-project-info{flex-basis:9%;width:9%}.header-project-info .visuel_1{max-width:100%}}
 @media (min-width:1025px){header h1{padding-left:clamp(1rem,2vw,3rem)}}
 @media (min-width:1025px){.rain-image,.div_box .visuel_2{min-height:0}.div_box .visuel_2{max-height:none}}
 @media (min-width:1025px) and (max-width:1400px){.div_box{align-items:stretch}.div_box .visuel_2{max-width:44vw;max-height:none;align-self:stretch;height:auto;object-fit:fill}.div_box .box{width:560px;min-height:0}}
