@@ -83,3 +83,24 @@
   }
 
 }
+
+@media (min-width: 3840px) {
+  .page-container {
+    max-width: 1000px;
+    padding: 88px 40px 64px;
+  }
+
+  .page-container h1 {
+    font-size: clamp(3rem, 5vw, 4.5rem);
+  }
+
+  .legal-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .page-container p,
+  .legal-section ul {
+    font-size: 1.1em;
+    line-height: 1.75;
+  }
+}
